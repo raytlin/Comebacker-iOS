@@ -11,7 +11,7 @@ import UIKit
 class MainViewController: UIViewController {
 
     @IBOutlet weak var mainTextView: UITextView!
-    var newText :NSString = "new"
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,16 +20,17 @@ class MainViewController: UIViewController {
         var url = NSURL(string: "http://localhost:3000/insults")!
         let task = NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: { (data, response, error) -> Void in
             
-            var jsondata = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(), error: nil) as NSArray
-            dispatch_sync(dispatch_get_main_queue(), {()-> Void in
-                for entry in jsondata {
-                    var e = entry as NSDictionary
-                    self.mainTextView.text = self.mainTextView.text.stringByAppendingString(e["text"] as NSString)
-                }
+            if data.length > 0  {
+                var jsondata = NSJSONSerialization.JSONObjectWithData(data, options: nil, error: nil) as NSArray
+                dispatch_sync(dispatch_get_main_queue(), {()-> Void in
+                    for entry in jsondata {
+                        var e = entry as NSDictionary
+                        self.mainTextView.text = self.mainTextView.text.stringByAppendingString(e["text"] as NSString)
+                    }
+                    
+                })
+            }
             
-            })
-            
-           
             
         })
         task.resume()
