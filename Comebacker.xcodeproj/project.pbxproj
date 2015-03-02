@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6EE3A0DF1AA4519B006038B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE3A0DE1AA4519B006038B2 /* AppDelegate.swift */; };
+		6EE3A0E21AA4519B006038B2 /* Comebacker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6EE3A0E01AA4519B006038B2 /* Comebacker.xcdatamodeld */; };
+		6EE3A0E41AA4519B006038B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE3A0E31AA4519B006038B2 /* ViewController.swift */; };
+		6EE3A0E71AA4519B006038B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EE3A0E51AA4519B006038B2 /* Main.storyboard */; };
+		6EE3A0E91AA4519B006038B2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EE3A0E81AA4519B006038B2 /* Images.xcassets */; };
+		6EE3A0EC1AA4519B006038B2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EE3A0EA1AA4519B006038B2 /* LaunchScreen.xib */; };
+		6EE3A0F81AA4519B006038B2 /* ComebackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE3A0F71AA4519B006038B2 /* ComebackerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6EE3A0F21AA4519B006038B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EE3A0D11AA4519B006038B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EE3A0D81AA4519B006038B2;
+			remoteInfo = Comebacker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6EE3A0D91AA4519B006038B2 /* Comebacker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Comebacker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EE3A0DD1AA4519B006038B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EE3A0DE1AA4519B006038B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6EE3A0E11AA4519B006038B2 /* Comebacker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Comebacker.xcdatamodel; sourceTree = "<group>"; };
+		6EE3A0E31AA4519B006038B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6EE3A0E61AA4519B006038B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6EE3A0E81AA4519B006038B2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6EE3A0EB1AA4519B006038B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6EE3A0F11AA4519B006038B2 /* ComebackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComebackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EE3A0F61AA4519B006038B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EE3A0F71AA4519B006038B2 /* ComebackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComebackerTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6EE3A0D61AA4519B006038B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EE3A0EE1AA4519B006038B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6EE3A0D01AA4519B006038B2 = {
+			isa = PBXGroup;
+			children = (
+				6EE3A0DB1AA4519B006038B2 /* Comebacker */,
+				6EE3A0F41AA4519B006038B2 /* ComebackerTests */,
+				6EE3A0DA1AA4519B006038B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6EE3A0DA1AA4519B006038B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6EE3A0D91AA4519B006038B2 /* Comebacker.app */,
+				6EE3A0F11AA4519B006038B2 /* ComebackerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6EE3A0DB1AA4519B006038B2 /* Comebacker */ = {
+			isa = PBXGroup;
+			children = (
+				6EE3A0DE1AA4519B006038B2 /* AppDelegate.swift */,
+				6EE3A0E31AA4519B006038B2 /* ViewController.swift */,
+				6EE3A0E51AA4519B006038B2 /* Main.storyboard */,
+				6EE3A0E81AA4519B006038B2 /* Images.xcassets */,
+				6EE3A0EA1AA4519B006038B2 /* LaunchScreen.xib */,
+				6EE3A0E01AA4519B006038B2 /* Comebacker.xcdatamodeld */,
+				6EE3A0DC1AA4519B006038B2 /* Supporting Files */,
+			);
+			path = Comebacker;
+			sourceTree = "<group>";
+		};
+		6EE3A0DC1AA4519B006038B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6EE3A0DD1AA4519B006038B2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6EE3A0F41AA4519B006038B2 /* ComebackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				6EE3A0F71AA4519B006038B2 /* ComebackerTests.swift */,
+				6EE3A0F51AA4519B006038B2 /* Supporting Files */,
+			);
+			path = ComebackerTests;
+			sourceTree = "<group>";
+		};
+		6EE3A0F51AA4519B006038B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6EE3A0F61AA4519B006038B2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6EE3A0D81AA4519B006038B2 /* Comebacker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EE3A0FB1AA4519B006038B2 /* Build configuration list for PBXNativeTarget "Comebacker" */;
+			buildPhases = (
+				6EE3A0D51AA4519B006038B2 /* Sources */,
+				6EE3A0D61AA4519B006038B2 /* Frameworks */,
+				6EE3A0D71AA4519B006038B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Comebacker;
+			productName = Comebacker;
+			productReference = 6EE3A0D91AA4519B006038B2 /* Comebacker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6EE3A0F01AA4519B006038B2 /* ComebackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EE3A0FE1AA4519B006038B2 /* Build configuration list for PBXNativeTarget "ComebackerTests" */;
+			buildPhases = (
+				6EE3A0ED1AA4519B006038B2 /* Sources */,
+				6EE3A0EE1AA4519B006038B2 /* Frameworks */,
+				6EE3A0EF1AA4519B006038B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EE3A0F31AA4519B006038B2 /* PBXTargetDependency */,
+			);
+			name = ComebackerTests;
+			productName = ComebackerTests;
+			productReference = 6EE3A0F11AA4519B006038B2 /* ComebackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6EE3A0D11AA4519B006038B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Ray Lin";
+				TargetAttributes = {
+					6EE3A0D81AA4519B006038B2 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					6EE3A0F01AA4519B006038B2 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 6EE3A0D81AA4519B006038B2;
+					};
+				};
+			};
+			buildConfigurationList = 6EE3A0D41AA4519B006038B2 /* Build configuration list for PBXProject "Comebacker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6EE3A0D01AA4519B006038B2;
+			productRefGroup = 6EE3A0DA1AA4519B006038B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6EE3A0D81AA4519B006038B2 /* Comebacker */,
+				6EE3A0F01AA4519B006038B2 /* ComebackerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6EE3A0D71AA4519B006038B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EE3A0E71AA4519B006038B2 /* Main.storyboard in Resources */,
+				6EE3A0EC1AA4519B006038B2 /* LaunchScreen.xib in Resources */,
+				6EE3A0E91AA4519B006038B2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EE3A0EF1AA4519B006038B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EE3A0D51AA4519B006038B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EE3A0E41AA4519B006038B2 /* ViewController.swift in Sources */,
+				6EE3A0DF1AA4519B006038B2 /* AppDelegate.swift in Sources */,
+				6EE3A0E21AA4519B006038B2 /* Comebacker.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EE3A0ED1AA4519B006038B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EE3A0F81AA4519B006038B2 /* ComebackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6EE3A0F31AA4519B006038B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EE3A0D81AA4519B006038B2 /* Comebacker */;
+			targetProxy = 6EE3A0F21AA4519B006038B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6EE3A0E51AA4519B006038B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EE3A0E61AA4519B006038B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6EE3A0EA1AA4519B006038B2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EE3A0EB1AA4519B006038B2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6EE3A0F91AA4519B006038B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6EE3A0FA1AA4519B006038B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6EE3A0FC1AA4519B006038B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Comebacker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6EE3A0FD1AA4519B006038B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Comebacker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6EE3A0FF1AA4519B006038B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ComebackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Comebacker.app/Comebacker";
+			};
+			name = Debug;
+		};
+		6EE3A1001AA4519B006038B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ComebackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Comebacker.app/Comebacker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6EE3A0D41AA4519B006038B2 /* Build configuration list for PBXProject "Comebacker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EE3A0F91AA4519B006038B2 /* Debug */,
+				6EE3A0FA1AA4519B006038B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EE3A0FB1AA4519B006038B2 /* Build configuration list for PBXNativeTarget "Comebacker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EE3A0FC1AA4519B006038B2 /* Debug */,
+				6EE3A0FD1AA4519B006038B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6EE3A0FE1AA4519B006038B2 /* Build configuration list for PBXNativeTarget "ComebackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EE3A0FF1AA4519B006038B2 /* Debug */,
+				6EE3A1001AA4519B006038B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6EE3A0E01AA4519B006038B2 /* Comebacker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6EE3A0E11AA4519B006038B2 /* Comebacker.xcdatamodel */,
+			);
+			currentVersion = 6EE3A0E11AA4519B006038B2 /* Comebacker.xcdatamodel */;
+			path = Comebacker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6EE3A0D11AA4519B006038B2 /* Project object */;
+}
