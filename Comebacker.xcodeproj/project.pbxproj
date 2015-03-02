@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		6EE3A0DF1AA4519B006038B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE3A0DE1AA4519B006038B2 /* AppDelegate.swift */; };
 		6EE3A0E21AA4519B006038B2 /* Comebacker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6EE3A0E01AA4519B006038B2 /* Comebacker.xcdatamodeld */; };
-		6EE3A0E41AA4519B006038B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE3A0E31AA4519B006038B2 /* ViewController.swift */; };
 		6EE3A0E71AA4519B006038B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EE3A0E51AA4519B006038B2 /* Main.storyboard */; };
 		6EE3A0E91AA4519B006038B2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EE3A0E81AA4519B006038B2 /* Images.xcassets */; };
 		6EE3A0EC1AA4519B006038B2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EE3A0EA1AA4519B006038B2 /* LaunchScreen.xib */; };
 		6EE3A0F81AA4519B006038B2 /* ComebackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE3A0F71AA4519B006038B2 /* ComebackerTests.swift */; };
+		6EE3A1021AA451BA006038B2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE3A1011AA451BA006038B2 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +31,13 @@
 		6EE3A0DD1AA4519B006038B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EE3A0DE1AA4519B006038B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EE3A0E11AA4519B006038B2 /* Comebacker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Comebacker.xcdatamodel; sourceTree = "<group>"; };
-		6EE3A0E31AA4519B006038B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6EE3A0E61AA4519B006038B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6EE3A0E81AA4519B006038B2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6EE3A0EB1AA4519B006038B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6EE3A0F11AA4519B006038B2 /* ComebackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComebackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EE3A0F61AA4519B006038B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EE3A0F71AA4519B006038B2 /* ComebackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComebackerTests.swift; sourceTree = "<group>"; };
+		6EE3A1011AA451BA006038B2 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				6EE3A0DE1AA4519B006038B2 /* AppDelegate.swift */,
-				6EE3A0E31AA4519B006038B2 /* ViewController.swift */,
+				6EE3A1011AA451BA006038B2 /* MainViewController.swift */,
 				6EE3A0E51AA4519B006038B2 /* Main.storyboard */,
 				6EE3A0E81AA4519B006038B2 /* Images.xcassets */,
 				6EE3A0EA1AA4519B006038B2 /* LaunchScreen.xib */,
@@ -215,7 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EE3A0E41AA4519B006038B2 /* ViewController.swift in Sources */,
+				6EE3A1021AA451BA006038B2 /* MainViewController.swift in Sources */,
 				6EE3A0DF1AA4519B006038B2 /* AppDelegate.swift in Sources */,
 				6EE3A0E21AA4519B006038B2 /* Comebacker.xcdatamodeld in Sources */,
 			);
