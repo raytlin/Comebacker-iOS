@@ -16,8 +16,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        var url = NSURL(string: "http://localhost:3000/insults")!
+        var url = NSURL(string: "http://localhost:3000/insults/getLimitedTo?limit=20")!
         let task = NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: { (data, response, error) -> Void in
             
             if data.length > 0  {
@@ -27,11 +26,8 @@ class MainViewController: UIViewController {
                         var e = entry as NSDictionary
                         self.mainTextView.text = self.mainTextView.text.stringByAppendingString(e["text"] as NSString)
                     }
-                    
                 })
             }
-            
-            
         })
         task.resume()
         
