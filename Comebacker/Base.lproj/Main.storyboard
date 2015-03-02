@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--COMEBACKER-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Comebacker" customModuleProvider="target" sceneMemberID="viewController">
@@ -31,7 +31,7 @@
                             <constraint firstAttribute="trailing" secondItem="IIs-hw-HV5" secondAttribute="trailing" id="v4I-ZJ-cb0"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="bRe-fW-u6d"/>
+                    <navigationItem key="navigationItem" title="COMEBACKER" id="bRe-fW-u6d"/>
                     <connections>
                         <outlet property="mainTextView" destination="IIs-hw-HV5" id="lZG-dR-VCs"/>
                     </connections>
