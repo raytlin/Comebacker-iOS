@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6ED571671AAB42420041C991 /* AddInsultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED571661AAB42420041C991 /* AddInsultViewController.swift */; };
 		6EE3A0DF1AA4519B006038B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE3A0DE1AA4519B006038B2 /* AppDelegate.swift */; };
 		6EE3A0E21AA4519B006038B2 /* Comebacker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6EE3A0E01AA4519B006038B2 /* Comebacker.xcdatamodeld */; };
 		6EE3A0E71AA4519B006038B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EE3A0E51AA4519B006038B2 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6ED571661AAB42420041C991 /* AddInsultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddInsultViewController.swift; sourceTree = "<group>"; };
 		6EE3A0D91AA4519B006038B2 /* Comebacker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Comebacker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EE3A0DD1AA4519B006038B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EE3A0DE1AA4519B006038B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				6EE3A0DE1AA4519B006038B2 /* AppDelegate.swift */,
 				6EE3A1011AA451BA006038B2 /* MainViewController.swift */,
 				6EE3A0E51AA4519B006038B2 /* Main.storyboard */,
+				6ED571661AAB42420041C991 /* AddInsultViewController.swift */,
 				6EE3A0E81AA4519B006038B2 /* Images.xcassets */,
 				6EE3A0EA1AA4519B006038B2 /* LaunchScreen.xib */,
 				6EE3A0E01AA4519B006038B2 /* Comebacker.xcdatamodeld */,
@@ -218,6 +221,7 @@
 				6EE3A1021AA451BA006038B2 /* MainViewController.swift in Sources */,
 				6EE3A0DF1AA4519B006038B2 /* AppDelegate.swift in Sources */,
 				6EE3A0E21AA4519B006038B2 /* Comebacker.xcdatamodeld in Sources */,
+				6ED571671AAB42420041C991 /* AddInsultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +415,7 @@
 				6EE3A0FD1AA4519B006038B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6EE3A0FE1AA4519B006038B2 /* Build configuration list for PBXNativeTarget "ComebackerTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				6EE3A1001AA4519B006038B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

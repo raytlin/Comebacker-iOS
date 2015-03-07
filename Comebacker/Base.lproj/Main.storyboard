@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BWN-7e-2BO">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--COMEBACKER-->
@@ -16,29 +17,115 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IIs-hw-HV5">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="54" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="V61-Yf-0e2">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="54" id="93i-sA-Mle">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="93i-sA-Mle" id="f6A-lv-rCL">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="q10-fz-Qow"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Mhz-Jv-Z6V"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="IIs-hw-HV5" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="3c2-nc-gkb"/>
-                            <constraint firstItem="IIs-hw-HV5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="FrM-nd-O5B"/>
-                            <constraint firstItem="IIs-hw-HV5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uOY-FN-nK7"/>
-                            <constraint firstAttribute="trailing" secondItem="IIs-hw-HV5" secondAttribute="trailing" id="v4I-ZJ-cb0"/>
+                            <constraint firstAttribute="trailing" secondItem="V61-Yf-0e2" secondAttribute="trailing" id="WmO-zA-D5Y"/>
+                            <constraint firstItem="V61-Yf-0e2" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="lzp-vg-fM3"/>
+                            <constraint firstItem="V61-Yf-0e2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wKA-uq-aaJ"/>
+                            <constraint firstItem="V61-Yf-0e2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xgz-xR-C6n"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="COMEBACKER" id="bRe-fW-u6d"/>
+                    <navigationItem key="navigationItem" title="COMEBACKER" id="bRe-fW-u6d">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="QJX-vx-jaa">
+                            <connections>
+                                <segue destination="L41-m1-fa0" kind="presentation" identifier="addInsult" id="moL-SN-f8V"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="mainTextView" destination="IIs-hw-HV5" id="lZG-dR-VCs"/>
+                        <outlet property="mainTableView" destination="V61-Yf-0e2" id="1cQ-r8-zPI"/>
+                        <outlet property="searchDisplayController" destination="R4Y-fM-aPo" id="AyW-OY-9L9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="JuQ-xT-pKi">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="bna-0u-TKt"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="YyD-oo-kR3"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="AGZ-lX-XGm"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="oLj-TJ-cM5"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="vqv-bz-gTw">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="lVw-cp-EMY"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="tkH-vU-BzX"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="5GD-DC-7de"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="KJz-8h-Zxf"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="R4Y-fM-aPo">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="CXm-Ah-AaR"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="k1K-US-zFi"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="sBN-bC-Dmq"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="iSP-4V-6WD"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="1117" y="387"/>
+        </scene>
+        <!--Add Insult View Controller-->
+        <scene sceneID="1oh-vC-RBc">
+            <objects>
+                <viewController id="L41-m1-fa0" customClass="AddInsultViewController" customModule="Comebacker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JGO-Hy-tHW"/>
+                        <viewControllerLayoutGuide type="bottom" id="zqo-Bi-SZ1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S3j-c8-San">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add New Insult" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rj5-X0-iKO">
+                                <rect key="frame" x="16" y="129" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Maf-9e-D8r">
+                                <rect key="frame" x="277" y="192" width="49" height="30"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitButtonPressed:" destination="L41-m1-fa0" eventType="touchUpInside" id="mdR-TN-Sr5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Maf-9e-D8r" firstAttribute="leading" secondItem="S3j-c8-San" secondAttribute="leading" constant="277" id="A3T-h5-RMc"/>
+                            <constraint firstItem="Maf-9e-D8r" firstAttribute="top" secondItem="rj5-X0-iKO" secondAttribute="bottom" constant="33" id="Oup-oj-88Y"/>
+                            <constraint firstItem="rj5-X0-iKO" firstAttribute="trailing" secondItem="S3j-c8-San" secondAttribute="trailingMargin" id="TEl-yR-Ahc"/>
+                            <constraint firstItem="rj5-X0-iKO" firstAttribute="leading" secondItem="S3j-c8-San" secondAttribute="leadingMargin" id="Zv7-m7-o6G"/>
+                            <constraint firstItem="rj5-X0-iKO" firstAttribute="top" secondItem="JGO-Hy-tHW" secondAttribute="bottom" constant="109" id="k9g-Q5-ln6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addInsultTextField" destination="rj5-X0-iKO" id="6wb-7f-ZdX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z5U-uq-7OI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1822" y="387"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9l6-hL-8iu">
