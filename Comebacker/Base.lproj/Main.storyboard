@@ -112,11 +112,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Maf-9e-D8r" firstAttribute="leading" secondItem="S3j-c8-San" secondAttribute="leading" constant="277" id="A3T-h5-RMc"/>
-                            <constraint firstItem="Maf-9e-D8r" firstAttribute="top" secondItem="rj5-X0-iKO" secondAttribute="bottom" constant="33" id="Oup-oj-88Y"/>
-                            <constraint firstItem="rj5-X0-iKO" firstAttribute="trailing" secondItem="S3j-c8-San" secondAttribute="trailingMargin" id="TEl-yR-Ahc"/>
-                            <constraint firstItem="rj5-X0-iKO" firstAttribute="leading" secondItem="S3j-c8-San" secondAttribute="leadingMargin" id="Zv7-m7-o6G"/>
-                            <constraint firstItem="rj5-X0-iKO" firstAttribute="top" secondItem="JGO-Hy-tHW" secondAttribute="bottom" constant="109" id="k9g-Q5-ln6"/>
+                            <constraint firstItem="Maf-9e-D8r" firstAttribute="top" secondItem="rj5-X0-iKO" secondAttribute="bottom" constant="33" id="0Z5-OP-fuk"/>
+                            <constraint firstItem="rj5-X0-iKO" firstAttribute="top" secondItem="JGO-Hy-tHW" secondAttribute="bottom" constant="109" id="87r-zz-NSN"/>
+                            <constraint firstAttribute="centerY" secondItem="Maf-9e-D8r" secondAttribute="centerY" constant="93" id="Bij-4a-3Bh"/>
+                            <constraint firstItem="rj5-X0-iKO" firstAttribute="leading" secondItem="S3j-c8-San" secondAttribute="leadingMargin" id="Zbf-NO-7ge"/>
+                            <constraint firstItem="rj5-X0-iKO" firstAttribute="trailing" secondItem="S3j-c8-San" secondAttribute="trailingMargin" id="hs1-ZC-LAw"/>
+                            <constraint firstAttribute="centerX" secondItem="Maf-9e-D8r" secondAttribute="centerX" constant="-1.5" id="u0r-qJ-Tdq"/>
                         </constraints>
                     </view>
                     <connections>

@@ -24,13 +24,11 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         self.searchController = UISearchController(searchResultsController: nil)
         self.searchController.searchResultsUpdater = self
-        self.searchController.searchBar.frame = CGRectMake(self.searchController.searchBar.frame.origin.x, self.searchController.searchBar.frame.origin.y, self.searchController.searchBar.frame.size.width, 44.0)
+        // self.searchController.searchBar.frame = CGRectMake(self.searchController.searchBar.frame.origin.x, self.searchController.searchBar.frame.origin.y, self.searchController.searchBar.frame.size.width, 44.0)
         self.mainTableView.tableHeaderView = self.searchController.searchBar
         self.searchController.delegate = self
         self.definesPresentationContext = true
-        
-        
-        
+      
         
     }
 

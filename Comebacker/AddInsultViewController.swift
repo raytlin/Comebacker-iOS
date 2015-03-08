@@ -15,15 +15,21 @@ class AddInsultViewController: UIViewController {
     
     
     @IBAction func submitButtonPressed(sender: AnyObject) {
-        var escapedString = addInsultTextField.text.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLHostAllowedCharacterSet())
-        var url = NSURL(string: "http://localhost:3000/insults/create?text=\(escapedString!)")!
-        let task = NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: { (data, response, error) -> Void in
-            println(data)
-            println(response)
-            println(error)
-        })
-        task.resume()
-        self.dismissViewControllerAnimated(true, completion: nil)
+        if addInsultTextField.text == "" || addInsultTextField.text == nil {
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
+        else {
+            
+            var escapedString = addInsultTextField.text.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLHostAllowedCharacterSet())
+            var url = NSURL(string: "http://localhost:3000/insults/create?text=\(escapedString!)")!
+            let task = NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: { (data, response, error) -> Void in
+                println(data)
+                println(response)
+                println(error)
+            })
+            task.resume()
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
     }
     
     
