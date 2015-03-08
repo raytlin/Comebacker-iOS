@@ -109,11 +109,43 @@
                     </tableView>
                     <connections>
                         <outlet property="comebackTableView" destination="qjL-aN-r9K" id="qAo-Sn-vFW"/>
+                        <segue destination="2Vc-C6-x8W" kind="presentation" identifier="showComeback" id="Mgl-RT-gGZ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yRu-3V-cAj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1117" y="1172"/>
+        </scene>
+        <!--Add Comeback View Controller-->
+        <scene sceneID="eBE-3L-r6L">
+            <objects>
+                <viewController id="2Vc-C6-x8W" customClass="AddComebackViewController" customModule="Comebacker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Esg-bP-j9p"/>
+                        <viewControllerLayoutGuide type="bottom" id="uIn-XE-CHB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b1u-aE-wXl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add new comeback" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PWz-76-KrF">
+                                <rect key="frame" x="16" y="93" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9q4-As-WOB">
+                                <rect key="frame" x="277" y="151" width="49" height="30"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="28D-cH-67H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1828" y="1170"/>
         </scene>
         <!--Add Insult View Controller-->
         <scene sceneID="1oh-vC-RBc">

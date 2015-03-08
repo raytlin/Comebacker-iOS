@@ -64,6 +64,17 @@ class ComebackTableViewController: UITableViewController {
         return cell
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        var refreshButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "addButton") //Use a selector
+        navigationItem.rightBarButtonItem = refreshButton
+ 
+    }
+    
+    func addButton() {
+        self.performSegueWithIdentifier("showComeback", sender: nil)
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -100,14 +111,18 @@ class ComebackTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
+        if segue.identifier == "showComeback"{
+            var addComebackViewController = segue.destinationViewController as AddComebackViewController
+            addComebackViewController.insult = self.insult
+        }
     }
-    */
+    
 
 }
