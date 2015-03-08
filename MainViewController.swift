@@ -17,6 +17,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     var jsonDataArray : NSArray = []
     var suggestedJSONDataArray : NSArray = []
+    var selectedCell :NSDictionary?
     
     
     override func viewDidLoad() {
@@ -24,7 +25,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         self.searchController = UISearchController(searchResultsController: nil)
         self.searchController.searchResultsUpdater = self
-        // self.searchController.searchBar.frame = CGRectMake(self.searchController.searchBar.frame.origin.x, self.searchController.searchBar.frame.origin.y, self.searchController.searchBar.frame.size.width, 44.0)
+        self.searchController.searchBar.frame = CGRectMake(self.searchController.searchBar.frame.origin.x, self.searchController.searchBar.frame.origin.y, self.searchController.searchBar.frame.size.width, 44.0)
         self.mainTableView.tableHeaderView = self.searchController.searchBar
         self.searchController.delegate = self
         self.definesPresentationContext = true
@@ -92,20 +93,28 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return cell
     }
     
+    
+    
     func updateSearchResultsForSearchController(searchController: UISearchController) {
         var searchString : String
         searchString = searchController.searchBar.text
         self.suggestedJSONDataArray = jsonDataArray.filteredArrayUsingPredicate(NSPredicate(format: "text contains[cd] %@", searchString)!)
         self.mainTableView.reloadData()
     }
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "showComebacks" {
+            var comebackTableViewController = segue.destinationViewController as ComebackTableViewController
+            comebackTableViewController.insult = jsonDataArray[self.mainTableView.indexPathForSelectedRow()!.row] as? NSDictionary
+        }
+        
     }
-    */
+    
 
 }

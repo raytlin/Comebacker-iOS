@@ -27,6 +27,9 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="93i-sA-Mle" id="f6A-lv-rCL">
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="eDP-ee-uXJ" kind="show" identifier="showComebacks" id="fM5-pR-Fbf"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -82,6 +85,35 @@
                 </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="1117" y="387"/>
+        </scene>
+        <!--Comeback Table View Controller-->
+        <scene sceneID="oJ2-XP-WXn">
+            <objects>
+                <tableViewController id="eDP-ee-uXJ" customClass="ComebackTableViewController" customModule="Comebacker" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="qjL-aN-r9K">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="comebackCell" id="2bV-x0-vJL">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2bV-x0-vJL" id="9Le-gE-Orn">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="eDP-ee-uXJ" id="Ig0-Aa-SzP"/>
+                            <outlet property="delegate" destination="eDP-ee-uXJ" id="hHd-mm-5NK"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="comebackTableView" destination="qjL-aN-r9K" id="qAo-Sn-vFW"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yRu-3V-cAj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="1172"/>
         </scene>
         <!--Add Insult View Controller-->
         <scene sceneID="1oh-vC-RBc">
